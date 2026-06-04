@@ -1,0 +1,21 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-06-04T17:13:39.001Z  INFO 16826 --- [           main] com.example.demo.Application             : Starting Application v1.0 using Java 17.0.19 with PID 16826 (/home/ubuntu/java-cicd-project/target/demo-1.0.jar started by root in /home/ubuntu/java-cicd-project)
+2026-06-04T17:13:39.014Z  INFO 16826 --- [           main] com.example.demo.Application             : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T17:13:40.983Z  INFO 16826 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-06-04T17:13:41.006Z  INFO 16826 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T17:13:41.006Z  INFO 16826 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-04T17:13:41.060Z  INFO 16826 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-04T17:13:41.062Z  INFO 16826 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+2026-06-04T17:13:41.719Z  INFO 16826 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-06-04T17:13:41.747Z  INFO 16826 --- [           main] com.example.demo.Application             : Started Application in 3.522 seconds (process running for 4.283)
+2026-06-04T17:14:17.311Z  INFO 16826 --- [nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T17:14:17.312Z  INFO 16826 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T17:14:17.313Z  INFO 16826 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
