@@ -1,15 +1,12 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'JDK17'
-        maven 'Maven3'
-    }
-
     stages {
 
         stage('Build') {
             steps {
+                sh 'java -version'
+                sh 'mvn -version'
                 sh 'mvn clean package'
             }
         }
@@ -28,6 +25,16 @@ pipeline {
                 docker run -d --name java-container -p 8081:8080 java-demo
                 '''
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build Successful'
+        }
+
+        failure {
+            echo 'Build Failed'
         }
     }
 }
