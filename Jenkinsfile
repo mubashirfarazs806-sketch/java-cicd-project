@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    tools {
+        jdk 'JDK17'
+        maven 'Maven3'
+    }
+
+    stages {
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t java-demo .'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                docker stop java-container || true
+                docker rm java-container || true
+                docker run -d --name java-container -p 8081:8080 java-demo
+                '''
+            }
+        }
+    }
+}
